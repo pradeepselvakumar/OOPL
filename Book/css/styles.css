@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    color:#007bff;
+}
+
+/* Style the TOC button */
+button.toc-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+button.toc-btn:hover {
+    background-color: #444;
+}
+
+/* Container for the Table of Contents */
+nav#toc {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    position: fixed;
+    height: 100vh;  /* Take the full height of the viewport */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.toc-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;  /* Allow vertical scrolling */
+    flex-grow: 1;  /* Ensure it takes remaining space */
+    max-height: calc(100vh - 50px);  /* Ensure it is scrollable, accounting for button height */
+}
+
+ul.toc-list li {
+    margin: 10px 0;
+}
+
+ul.toc-list li ul {
+    padding-left: 15px;
+}
+
+/* Scrollbar customization */
+ul.toc-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul.toc-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+ul.toc-list::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+/* Styling for links */
+ul.toc-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul.toc-list a:hover {
+    color: #007bff;
+}
+
+/* Adjust TOC for smaller screens */
+@media (max-width: 768px) {
+    nav#toc {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+
+    ul.toc-list {
+        max-height: none;
+    }
+
+    button.toc-btn {
+        display: block;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+main#content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Divider between sections */
+main#content h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Add some spacing and lines between sections */
+main#content section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Callout sections for special content */
+.callout {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.callout-info {
+    background-color: #e7f3fe;
+    border-left: 5px solid #2196F3;
+    color: #0b5294;
+}
+
+.callout-warning {
+    background-color: #ffebcc;
+    border-left: 5px solid #ff9800;
+    color: #a65b00;
+}
+
+.callout-example {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4caf50;
+    color: #33691e;
+}
