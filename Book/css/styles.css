@@ -1,19 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-}
-
 .container {
     display: flex;
     width: 100%;
-    color:#007bff;
 }
 
 /* Style the TOC button */
 button.toc-btn {
-    background-color: #333;
-    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -28,8 +19,8 @@ button.toc-btn:hover {
 /* Container for the Table of Contents */
 nav#toc {
     width: 250px;
-    background-color: #f4f4f4;
     padding: 10px;
+    background-color: #f4f4f4;
     border-right: 1px solid #ccc;
     position: fixed;
     height: 100vh;  /* Take the full height of the viewport */
@@ -133,19 +124,11 @@ main#content section {
 }
 
 .callout-info {
-    background-color: #e7f3fe;
     border-left: 5px solid #2196F3;
-    color: #0b5294;
 }
 
 .callout-warning {
     background-color: #ffebcc;
     border-left: 5px solid #ff9800;
     color: #a65b00;
-}
-
-.callout-example {
-    background-color: #e8f5e9;
-    border-left: 5px solid #4caf50;
-    color: #33691e;
 }
