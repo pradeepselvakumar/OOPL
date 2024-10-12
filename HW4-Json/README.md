@@ -26,10 +26,7 @@ Create a Python script that processes user profile data stored as JSON files in 
          - The value `"enabled"` should be replaced by an object: `{"status": "enabled", "since": "2024-10-01"}`.
          - The value `"manage_users"` should be replaced by an object containing permission details: `{"permission": "manage_users", "granted_at": "2024-10-05", "level": "full"}`.
 
-    d. **Recursive Replacement**:
-       - The script should handle nested dictionaries and lists, ensuring all values in the JSON structure are checked for replacements.
-
-    e. **Output Directory**:
+    d. **Output Directory**:
        - The modified JSON files should be written into a new folder with the current timestamp in the format: `user_profiles_updated_YYYYMMDD_HHMMSS`.
 
 4. **Bonus (Optional)**:
@@ -66,8 +63,24 @@ If your script is run on `2024-10-11`, the output folder could be named `user_pr
 1. Add your Python script (`batch_update_profiles.py`).
 2. A sample output folder containing the updated JSON files.
 
-#### Hints and Suggestions
+#### Hints and Suggestions 
+
 1. You may want to use one or more of these packages:
-    os, [json](https://docs.python.org/3/library/json.html), [shutil](https://docs.python.org/3/library/shutil.html), sys, datetime
+    os, [json](https://docs.python.org/3/library/json.html), [shutil](https://docs.python.org/3/library/shutil.html), sys, datetime.
+
+<details>
+  <summary>
+    Try to solve on your own first without looking at the rest of the hints
+  </summary>
+
+1. Define a dictionary of the mappings
+1. Copy all the files in the source directory to the destination first, preserving the folder structure.
+1. For each JSON file, open and read the contents. 
+1. Apply the replacements as specified in the dictionary.
+1. Write the file back out.
+1. Handle edge cases, such as missing keys in the JSON files, and ensure your script is robust to errors (e.g., using try-except blocks).
+
+</details>
+
 
 ### This assignment is due by Oct 19th, midnight 
