@@ -75,6 +75,7 @@ If your script is run on `2024-10-11`, the output folder could be named `user_pr
 
 1. Define a dictionary of the mappings
 1. Copy all the files in the source directory to the destination first, preserving the folder structure.
+    1. shutil.copytree() might help here.
 1. For each JSON file, open and read the contents. 
 1. Apply the replacements as specified in the dictionary.
 1. Write the file back out.
