@@ -9,3 +9,4 @@
     "last_login": "2024-09-28",
     "permissions": ["view_content"]
 
+// } // Intentionally malformed JSON
