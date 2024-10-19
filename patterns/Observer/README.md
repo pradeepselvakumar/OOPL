@@ -63,3 +63,24 @@ Solution Outline:
     # Start monitoring Bitcoin price (fetch every 30 seconds)
     bitcoin.monitor_price(interval=30)
 ```
+
+### Sample Output
+```
+> python.exe .\crypto.py
+Alice received update: Bitcoin is now $68045
+Alice: It's time to SELL Bitcoin!
+Bob received update: Bitcoin is now $68045
+Bob: It's time to SELL Bitcoin!
+Alice received update: Bitcoin is now $68097
+Alice: It's time to SELL Bitcoin!
+Bob received update: Bitcoin is now $68097
+Bob: It's time to SELL Bitcoin!
+Alice received update: Bitcoin is now $68097
+Alice: It's time to SELL Bitcoin!
+Bob received update: Bitcoin is now $68097
+Bob: It's time to SELL Bitcoin!
+Alice received update: Bitcoin is now $68097
+Alice: It's time to SELL Bitcoin!
+Bob received update: Bitcoin is now $68097
+Bob: It's time to SELL Bitcoin!
+```
