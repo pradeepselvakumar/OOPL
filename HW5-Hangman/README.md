@@ -79,7 +79,8 @@ Do you want to play again? (y/n):
 - The player should only be allowed to enter single letters (both uppercase and lowercase are accepted). If the player enters something invalid (e.g., more than one letter or a non-alphabet character), prompt them to try again.
 - The program should not allow duplicate guesses and should prompt the player if they try to guess the same letter multiple times.
 - The program should be case-insensitive (i.e., treat 'A' and 'a' as the same letter).
-- Assume all answers are single words only, with no spaces or other special characters
+- Support words with spaces and non-alphabet characters ('-' etc) by
+always displaying such characters. For ex., the blanks for "syntax error" should be displayed as <pre>_ _ _ _ _ _   _ _ _ _ _</pre> and the user does not have to guess the space character. Ensure that the number of errors allowed are dependent on the number of blanks shown.
 
 #### Submission:
 - Please add your script to the folder HW5-Hangman to your homework repo.
